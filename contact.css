@@ -1,0 +1,277 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* HEAD */
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: darkcyan;
+    font-family: 'Quicksand';
+    min-height: 8vh;
+    color: white;
+}
+
+.logo H1{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.main H1 span{
+    font-weight: 700;
+}
+
+/* Nav bar */
+.head .navigation ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.head .navigation li a{
+    color: white;
+    width:30%;
+    margin: 10px;
+    text-decoration: none   ;
+}
+
+.head .navigation li {
+    margin: 15px;
+    float:left;
+    padding: 0px;
+    list-style-type: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+/* SEARCH BAR */
+.search-box{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:#2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+#bttn {
+    color: black;
+    margin: -7px;
+    padding:0px;
+    float:left;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.search-btn{
+    color: black;
+    margin: -7px;
+    padding:0px;
+    float:right;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search-txt{
+    border:none;
+    background: none;
+    outline: none;
+    padding:0;
+    float: left;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    width: 240px;
+    
+}
+
+/* BODY */
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:whitesmoke;
+
+}
+
+
+.wod{
+    transform: translate(40%,300%);
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-right: 100px;
+    /* margin: 0px;
+    padding:0px; */
+    font-size: 22px;
+    font-weight: 300;
+    
+}
+
+.id{
+    margin-top: 100px;
+    font-family: 'Quicksand';
+}
+/* .day{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    background: content-box rgb(208, 194, 194);
+    transform: translate(165%,30%);
+} */
+
+
+/* footer */
+footer{
+    margin-top: 100px;
+    background-color: black;
+    color:white;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+    display: block ;
+    width: 100%;
+    overflow: hidden;
+    min-height: 350px;
+    max-height: 370px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+div.findus{
+    background: black;
+    margin-right: 5px;
+    justify-content: center;
+    align-content: center;
+
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+
+}
+
+div.findus h4{
+    color: whitesmoke;
+    margin:20px;
+    text-decoration: none;
+}
+/* logo */
+.line h4{
+    width: 90%;
+    height: 0,1px;
+    margin-left: 50px;
+    margin-right: 20px;
+    border-color: rgb(208, 194, 194);
+    border-radius:0%;
+    border-block-start-style: solid;
+
+}
+
+
+
+.logo-container{
+    transform: translate(5%,0%);
+    margin-top: 15px;
+    
+}
+.logo-container .logo{
+    height: auto;
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-weight:200;   
+    float: left;
+    display: grid;
+    color: whitesmoke;
+}
+
+.logo-container .logo span{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+/* belly*/
+
+
+
+.belly .footer-1{
+    width: calc(21.6666666667% -20px);
+    margin-left: 160px;
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+    text-decoration: none;
+} 
+
+/* 1 */
+.belly  .footer-1:last-child{
+    margin-right: 0;
+}
+.belly .footer-1 h1{
+    font-family:'Titillium Web', sans-serif;
+    font-size: 19px;
+    color: whitesmoke;
+    display: block;
+    width:100%;
+    margin-bottom: 20px;
+}  
+
+.belly .footer-1 a{
+    font-family:'Titillium Web', sans-serif;
+    font-size: 14px;
+    color: whitesmoke;
+    display: block;
+    width:100%;
+    font-weight: 200;
+    padding-bottom: 5px;
+    text-decoration: none;
+} 
+
+
+
+.belly .footer-1 li{
+    display: inline-flex;
+    padding: 0 10px;
+    font-size: 20px;
+} 
+/* bellow */
+.below{
+    margin-left: 524.475px;
+    margin-top:260px;
+
+}
+
+.findus {
+    text-decoration: none;
+}
+
+.ctu {
+    font-family: 'Quicksand';
+    margin-top: 50px;
+    margin-left: 60px;
+    line-height: 30px;
+}

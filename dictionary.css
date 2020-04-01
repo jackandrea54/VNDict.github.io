@@ -1,0 +1,443 @@
+*{
+    padding:0px;
+    margin: 0px;
+    text-decoration: none;
+    box-sizing: border-box ;
+}
+
+html{
+    height: 100%;
+}
+/* HEAD */
+.header{
+    display: block;
+    width:100%; 
+    height:50px;
+    background-color: darkcyan;
+}
+
+.inside-header{ 
+    width:900px;
+    height:100%;
+    display: block; 
+    margin: 0 auto;
+}
+
+.logo{
+    letter-spacing: 4px;
+    height: 100%;
+    float: left;
+    display: table;
+   
+}
+
+.logo h1{
+    color: white;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    font-size:20px;
+    display: table-cell;
+    font-weight: 200;
+
+    text-transform: uppercase;
+}
+
+.inside-header .logo h1 span{
+    font-weight: 800;
+}  
+
+ /* Nav Bar*/
+.navigation{
+    float: right;
+    height: 100px;
+}
+.navigation a{
+    vertical-align: middle;
+    height: 70%;
+    display: table;
+    float:left;
+    padding: 0px 20px 20px;
+
+}
+
+.navigation a:last-child{   
+    padding-right: 0px;
+}
+.navigation a li{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 14px;
+    padding: 0px auto;
+    letter-spacing: 3px;
+
+}
+
+.navigation:hover {
+    color: burlywood;
+}
+/* BODY */
+body{
+    background-image: url(space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: aliceblue; */
+    min-height: 100%;
+    width: 100%;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content{
+    padding: 3rem;
+}
+
+
+
+/* SEARCH BOX */
+header{
+    width: 100%;
+    min-height: 150px;
+    margin:0;
+    background-color: none;
+
+}
+
+#search-box{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:rgba(97, 99, 98, 0.804);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    /* z-index: -1; */
+}
+
+
+#bttn{
+    color: black;
+    margin: -7px;
+    padding:0px;
+    float:right;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#search-txt{
+    border:none;
+    background: none;
+    outline: none;
+    padding:0;
+    float: left;
+    color: white;
+    font-size: 16px;
+    line-height: 25px;
+    width: 240px;
+    
+}
+
+#bttn{
+    color: black;
+    margin: -7px;
+    padding:0px;
+    float:right;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-txt-mobile{
+    border:none;
+    background: none;
+    outline: none;
+    padding:0;
+    float: left;
+    color: white;
+    font-size: 16px;
+    line-height: 28px;
+    width: 240px;   
+}
+
+
+/* WORD OF THE DAY */
+.word-of-the-day{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 360px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif; 
+
+    /* background-color: whitesmoke;
+    border:1px solid rgb(123, 118, 118); */
+    color: white;
+}
+
+
+
+/* First Sheet */
+.word-of-the-day .word{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: space-around;
+    width:50%;
+    height: 100%;
+    /* background-color:whitesmoke;
+    border:1px solid rgb(123, 118, 118); */
+    border-radius: 10%;
+
+}
+
+.word-of-the-day .word h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-content:center;
+    font-size: 30px;
+    letter-spacing: 3px;
+    width: 100%;
+    height: 5%;
+    display: inline-flex;
+    margin-bottom: 30px;
+
+}
+
+/* CIRCLE */
+.word-of-the-day .word .c-contain{        
+    display: flex;
+    flex-direction: column;
+    position: space-around;
+    color:white;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+   
+    border: 1px solid #3498db;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+
+
+.word .circle{
+    transition: 0.3s;
+}
+
+.word .circle:hover{
+    color:rgb(88, 137, 222);
+} 
+
+.word .c-contain:hover{
+    background-color: rgb(232, 226, 226);
+    transition: 0.8s;
+}        
+
+.word .circle::before{
+    background-color: darkseagreen;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+    left: 0;
+    transition: 0.5s;    
+}
+
+.word .circle::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.word .circle:hover::before{
+    height: 100%;
+}
+
+/* INSIDE CIRCLE */
+.word-of-the-day .word .c-contain h3{
+    margin-top: 24%;
+    font-size: 40px;
+    letter-spacing: 5px;
+}    
+
+.word-of-the-day .word .c-contain .meaning{
+    font-size: 25px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+.word-of-the-day .word .c-contain i{
+    color: white;
+    font-size: 35px;
+    margin-top:15px;
+}
+
+/* Second Sheet */
+.word-of-the-day .definition{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    height: 100%;
+    /* background-color: whitesmoke;
+    border:1px solid rgb(123, 118, 118); */
+    border-radius: 10%;
+}
+
+.word-of-the-day .definition h1{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    margin-top: 25px;
+    margin-left: 5px;
+    font-size: 25px;
+    text-transform: uppercase;    
+}
+
+.word-of-the-day .definition ul{
+    margin-left: 20px;
+}
+
+.word-of-the-day .definition li{
+    margin-bottom:5px;
+    color: ghostwhite;
+}
+
+
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    
+
+    box-sizing: border-box;
+    overflow: hidden;
+    display: block;
+    
+    margin-top: auto;
+}
+
+
+div.findus{
+    
+    background: black;
+    margin-right: 5px;
+    justify-content: center;
+    align-content: center;
+    
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+div.findus h4{
+   color: whitesmoke;
+   margin:20px
+}
+
+
+/* LINE */
+.line h4{
+    width: 90%;
+    height: 0,1px;
+    margin-left: 50px;
+    margin-right: 20px;
+    border-color: rgb(208, 194, 194);
+    border-radius:0%;
+    border-block-start-style: solid;
+
+}
+
+logo-container .logo{
+    height: auto;
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-weight:200;   
+    float: left;
+    display: grid;
+    color: whitesmoke;
+}
+
+.logo-container .logo span{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+/* belly*/
+
+.belly .footer-1{   
+    font-family:'Titillium Web', sans-serif;
+    width: calc(21.6666666667% -20px);
+    margin-left: 160px;
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+} 
+
+/* 1 */
+  
+.belly  .footer-1:last-child{
+    margin-right: 0;
+}
+.belly .footer-1 h1{
+    font-size: 19px;
+    color: whitesmoke;
+    display: block;
+    width:100%;
+    margin-bottom: 20px;
+}  
+
+.belly .footer-1 a{
+    font-size: 14px;
+    color: whitesmoke;
+    display: block;
+    width:100%;
+    font-weight: 200;
+    padding-bottom: 5px;
+
+} 
+
+
+
+.belly .footer-1 li{
+    display: inline-flex;
+    padding: 0 10px;
+    font-size: 20px;
+} 
+/* bellow */
+.below{
+    margin-left: 524.475px;
+    margin-top:260px;
+}
+
+/* DOWNER */
+
+.logo-container{
+    transform: translate(5%,0%);
+    margin-top: 15px;
+   
+    
+}
